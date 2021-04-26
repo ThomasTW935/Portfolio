@@ -1,0 +1,193 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.App > div, .App header {
+  padding: 1em;
+}
+
+.App a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #8000ff;
+  color: white;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5em;
+}
+
+header li {
+  border-radius: 6px;
+  list-style: none;
+  padding: .5em;
+  cursor: pointer;
+}
+
+header li:hover {
+  background: red;
+}
+
+.aboutMe {
+  min-height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project {
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+  -webkit-box-shadow: 0 3px 6px 3px #e6ccff;
+          box-shadow: 0 3px 6px 3px #e6ccff;
+  padding: 1em;
+}
+
+.project > * {
+  padding: .5em 0;
+}
+
+.project__image {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.project__image img {
+  aspect-ratio: 16/9;
+  width: 70%;
+  height: auto;
+}
+
+.project__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+.project__buttons button {
+  cursor: pointer;
+}
+
+.project__buttons a {
+  padding: .5em 1.5em;
+  border-radius: 6px;
+  border: 1px solid #8000ff;
+  font-weight: bold;
+}
+
+.project__buttons a:hover {
+  background: #8000ff;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
