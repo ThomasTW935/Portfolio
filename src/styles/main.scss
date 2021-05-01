@@ -21,14 +21,17 @@ nav{
     ul{
         display:flex;
         gap: 1em;
+        padding: 0 1em;
     }
     li{
-        border-radius: 6px;
         padding: .5em .75em;
         list-style: none;
         cursor: pointer;
+        border-bottom: 2px solid transparent ;
+        border-radius: 5px;
         &:hover{
-            background:red;
+            color: $color-primary-500;
+            background: $color-neutral;
         }
 }
 .contact{

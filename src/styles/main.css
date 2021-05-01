@@ -109,17 +109,20 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 1em;
+  padding: 0 1em;
 }
 
 li {
-  border-radius: 6px;
   padding: .5em .75em;
   list-style: none;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
+  border-radius: 5px;
 }
 
 li:hover {
-  background: red;
+  color: #8000ff;
+  background: white;
 }
 
 .contact {
