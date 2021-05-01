@@ -4,20 +4,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelopeSquare, faFilePdf} from '@fortawesome/free-solid-svg-icons'
 import Projects from './components/Projects'
+import Nav from './components/Nav'
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h2>Portfolio</h2>
-        <nav>
-          <ul>
-            <li><a href='/'>About</a></li>
-            <li><a href='/'>Projects</a></li>
-            <li><a href='/'>Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
+        <Nav/>
       <div className='aboutMe'>
         <h1>Hi!</h1>
         <div>

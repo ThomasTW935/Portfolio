@@ -81,8 +81,8 @@ select {
   }
 }
 
-.App > div, .App header {
-  padding: 1em;
+.App > div, .App nav {
+  padding: .5em;
 }
 
 .App a {
@@ -90,7 +90,7 @@ select {
   text-decoration: none;
 }
 
-header {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,21 +104,21 @@ header {
   color: white;
 }
 
-header ul {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: .5em;
+  gap: 1em;
 }
 
-header li {
+li {
   border-radius: 6px;
+  padding: .5em .75em;
   list-style: none;
-  padding: .5em;
   cursor: pointer;
 }
 
-header li:hover {
+li:hover {
   background: red;
 }
 
