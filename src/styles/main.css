@@ -142,11 +142,18 @@ header li:hover {
 }
 
 .project {
-  -ms-flex-preferred-size: 350px;
-      flex-basis: 350px;
+  -ms-flex-preferred-size: 352px;
+      flex-basis: 352px;
   -webkit-box-shadow: 0 3px 6px 3px #e6ccff;
           box-shadow: 0 3px 6px 3px #e6ccff;
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project > * {
@@ -154,15 +161,20 @@ header li:hover {
 }
 
 .project__image {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  height: 198px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project__image img {
-  aspect-ratio: 16/9;
-  width: 70%;
-  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .project__buttons {
