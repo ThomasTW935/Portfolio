@@ -12,10 +12,17 @@ function App() {
         <Nav/>
       <div className='aboutMe'>
         <h1>Hi!</h1>
-        <div>
-          <FontAwesomeIcon icon={faGithub}/>
-          <FontAwesomeIcon icon={faEnvelopeSquare}/>
-          <FontAwesomeIcon icon={faFilePdf}/>
+        <div className='contact'>
+          <p>
+            <FontAwesomeIcon icon={faEnvelopeSquare}/>
+            <span>thomastw935@gmail.com</span>
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faFilePdf}/>
+          </p>
+          <div className='links'>
+            <a href='https://github.com/ThomasTW935' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub}/></a>
+          </div>
         </div>
       </div>
       <Projects/>

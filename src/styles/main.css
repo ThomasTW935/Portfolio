@@ -122,11 +122,38 @@ li:hover {
   background: red;
 }
 
+.contact {
+  font-size: 1.2rem;
+}
+
+.contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.contact .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  padding: .5em 1em;
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.contact .links a:hover {
+  color: #8000ff;
+}
+
 .aboutMe {
   min-height: 20vh;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projects {

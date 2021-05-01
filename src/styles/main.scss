@@ -31,10 +31,28 @@ nav{
             background:red;
         }
 }
+.contact{
+    font-size: 1.2rem;
+    p{
+        display:flex;
+        gap: 1em;
+    }
+    .links{
+        display:flex;
+        gap: 1em;
+        padding: .5em 1em;
+        font-size: 1.5em;
+        overflow:hidden;
+        a:hover{
+            color: $color-primary-500;
+        }   
+        
+    }
+}
 .aboutMe{
     min-height: 20vh;
-    display:grid;
-    place-content:center;
+    display:flex;
+    justify-content: space-around;
 }
 .projects{
     display:flex;
