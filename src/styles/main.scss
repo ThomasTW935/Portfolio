@@ -1,6 +1,6 @@
 @import './reset';
 @import './variables';
-
+@import './projects';
 
 .App{
     &>div, nav{
@@ -56,65 +56,4 @@ nav{
     min-height: 20vh;
     display:flex;
     justify-content: space-around;
-}
-.projects{
-    display:flex;
-    justify-content: space-evenly;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-.project{
-    flex-basis: 352px;
-    box-shadow: 0 3px 6px 3px $color-primary-100;
-    padding: 1em;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    &>*{
-        padding: .5em 0;
-    }
-    &__image{
-        height: 198px;
-        display:flex;
-        justify-content:center;
-        img{
-            display: inline-block;
-            vertical-align: middle;
-            max-height: 100%;
-            max-width: 100%;
-        }
-    }
-    &__icons{
-        display:flex;
-        justify-content:center;
-    }
-    &__icon{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:Center;
-        padding-right: .5em;
-        span{
-            font-size: .7em;
-        }
-    }
-    &__buttons{
-        display:flex;
-        justify-content: center;
-        gap: 1em;
-        button{
-            cursor: pointer;
-        }
-        a{
-            padding: .5em 1.5em;
-            border-radius: 6px;
-            border: 1px solid $color-primary-500;
-            font-weight: bold;
-            &:hover{
-                background: $color-primary-500;
-                color: $color-neutral;
-            }
-        }
-        
-    }
 }

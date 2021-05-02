@@ -1,9 +1,9 @@
 import WindowsCalculator from '../images/Windows Calculator.PNG'
-import {faReact, faSass,faPhp, faJs, faHtml5} from '@fortawesome/free-brands-svg-icons'
+import {faReact, faSass,faPhp, faJs, faHtml5, faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faFire, faDatabase, faServer} from '@fortawesome/free-solid-svg-icons'
 
 
-const ICONS = {
+export const ICONS = {
   HTML:{name:'Html5', color:'#F16524', icon: faHtml5},
   PHP:{name:'PHP', color:'#8993C1', icon: faPhp},
   JAVASCRIPT:{name:'Javascript', color:'#F7E018', icon: faJs},
@@ -13,13 +13,14 @@ const ICONS = {
   FIRESTORE:{name:'FireStore', color:'', icon: faDatabase},
   MYSQL:{name:'MySql', color:'', icon: faDatabase},
   HEROKU:{name:'Heroku', color:'', icon: faServer},
+  GITHUB:{name:'Github', color:'', icon: faGithub},
 }
 
 export const projects = [
   {
       image: WindowsCalculator, 
       title: 'Windows Calculator Clone', 
-      message:'Windows Calculator Clone using React with SASS', 
+      description:'Windows Calculator Clone using React with SASS', 
       skills: [
           ICONS.REACT,
           ICONS.SASS,
@@ -32,7 +33,7 @@ export const projects = [
   {
       image: WindowsCalculator, 
       title: 'ToDo List', 
-      message:'Todo List with authentication using firebase', 
+      description:'Todo List with authentication using firebase', 
       skills: [
           ICONS.REACT,
           ICONS.SASS,
@@ -47,7 +48,7 @@ export const projects = [
   {
       image: WindowsCalculator, 
       title: 'Class Scheduling System', 
-      message:'', 
+      description:'', 
       skills: [
           ICONS.HTML,
           ICONS.JAVASCRIPT,

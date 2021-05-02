@@ -1,0 +1,89 @@
+.projects{
+  width: 70%;
+  margin: 0 auto;
+}
+.project{
+  border-bottom: 1px solid $color-primary-500;
+  padding: 3em 2em;
+  display:flex;
+  gap: 5ch;
+  &__image{
+      height: 198px;
+      width: 250px;
+      display:flex;
+      justify-content: flex-end;
+      border-radius: 5px;
+      img{
+          display: inline-block;
+          vertical-align: middle;
+          max-height: 100%;
+          max-width: 100%;
+          border-radius: 6px;
+      }
+  }
+  &__details{
+    flex-grow: 1;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+  &__title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 5em;
+  }
+  &__cta{
+    display:flex;
+    align-items:center;
+    a{
+      padding: .5em 1.5em;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    
+    .github{
+      &:hover{
+        color: $color-primary-500;
+      }
+    }
+    .live{
+      background: $color-primary-500;
+      color: $color-neutral;
+      &:hover{
+        background: $color-primary-300;
+      }
+    }
+  }
+  &__skills{
+      display:flex;
+  }
+  &__skill{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding-right: .5em;
+      span{
+          font-size: .7em;
+      }
+  }
+  &__buttons{
+      display:flex;
+      justify-content: center;
+      gap: 1em;
+      button{
+          cursor: pointer;
+      }
+      a{
+          padding: .5em 1.5em;
+          border-radius: 6px;
+          border: 1px solid $color-primary-500;
+          font-weight: bold;
+          &:hover{
+              background: $color-primary-500;
+              color: $color-neutral;
+          }
+      }
+      
+  }
+}
