@@ -69,6 +69,7 @@ nav{
     padding: 1em;
     display:flex;
     flex-direction:column;
+    justify-content: space-between;
     &>*{
         padding: .5em 0;
     }
@@ -81,6 +82,20 @@ nav{
             vertical-align: middle;
             max-height: 100%;
             max-width: 100%;
+        }
+    }
+    &__icons{
+        display:flex;
+        justify-content:center;
+    }
+    &__icon{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:Center;
+        padding-right: .5em;
+        span{
+            font-size: .7em;
         }
     }
     &__buttons{

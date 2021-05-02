@@ -184,6 +184,9 @@ li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project > * {
@@ -205,6 +208,36 @@ li:hover {
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
+}
+
+.project__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: Center;
+      -ms-flex-align: Center;
+          align-items: Center;
+  padding-right: .5em;
+}
+
+.project__icon span {
+  font-size: .7em;
 }
 
 .project__buttons {
