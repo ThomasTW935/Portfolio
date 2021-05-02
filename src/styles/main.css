@@ -92,7 +92,7 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5ch;
+  gap: 2vw;
 }
 
 .project__image {
@@ -101,13 +101,10 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  border-radius: 5px;
 }
 
 .project__image img {
+  margin-left: auto;
   display: inline-block;
   vertical-align: middle;
   max-height: 100%;
@@ -116,9 +113,10 @@ select {
 }
 
 .project__details {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,13 +133,12 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project__cta {

@@ -10,7 +10,7 @@ export default function Project({project}) {
           <div className='project__image'><img alt={`${title}`} src={image}/></div>
           <div className='project__details'>
             <div className='project__title'>
-              <h1>{title}</h1>
+              <h3>{title}</h3>
               <section className='project__cta'>
                 <a href={github} target='_blank' rel='noreferrer' className='github project__skill'>
                   <FontAwesomeIcon size='2x' icon={ICONS.GITHUB.icon} />
