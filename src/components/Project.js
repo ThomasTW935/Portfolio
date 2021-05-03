@@ -9,27 +9,28 @@ export default function Project({project}) {
         <div className='project'>
           <div className='project__image'><img alt={`${title}`} src={image}/></div>
           <div className='project__details'>
-            <div className='project__title'>
-              <h3>{title}</h3>
-              <section className='project__cta'>
-                <a href={github} target='_blank' rel='noreferrer' className='github project__skill'>
-                  <FontAwesomeIcon size='2x' icon={ICONS.GITHUB.icon} />
-                  <span>Github</span>
-                </a>
-                <a href={live} target='_blank' rel='noreferrer' className='live'>Live</a>
-              </section>
+            <div className='project__header'>
+              <p className='project__title'>{title}</p>
+              
             </div>
             <div className='project__skills'>
               {
                 skills.map((skill,index)=>
                   <div className='project__skill' key={index}>
-                    <FontAwesomeIcon icon={skill.icon} size='2x' color={skill.color}/>
+                    <FontAwesomeIcon icon={skill.icon} color={skill.color}/>
                     <span>{skill.name}</span>
                   </div>
                 )
               }
             </div>
             <p className='project__description'>LoiruenakjK jnsadkjnnaksjdnqi jnsdks</p>
+            <section className='project__cta'>
+                <a href={github} target='_blank' rel='noreferrer' className='github project__skill'>
+                  <FontAwesomeIcon  icon={ICONS.GITHUB.icon} />
+                  <span>Github</span>
+                </a>
+                <a href={live} target='_blank' rel='noreferrer' className='live'>LIVE</a>
+              </section>
           </div>
         </div>
     )

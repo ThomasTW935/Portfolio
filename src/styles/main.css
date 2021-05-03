@@ -81,17 +81,14 @@ select {
   }
 }
 
-.projects {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .project {
   border-bottom: 1px solid #8000ff;
-  padding: 3em 2em;
+  padding: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2vw;
 }
 
@@ -101,10 +98,12 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: Center;
+      -ms-flex-pack: Center;
+          justify-content: Center;
 }
 
 .project__image img {
-  margin-left: auto;
   display: inline-block;
   vertical-align: middle;
   max-height: 100%;
@@ -113,66 +112,25 @@ select {
 }
 
 .project__details {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.project__cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.project__cta a {
-  padding: .5em 1.5em;
-  border-radius: 6px;
+  font-size: 1.3rem;
   font-weight: bold;
-}
-
-.project__cta .github:hover {
-  color: #8000ff;
-}
-
-.project__cta .live {
-  background: #8000ff;
-  color: white;
-}
-
-.project__cta .live:hover {
-  background: #b366ff;
 }
 
 .project__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  gap: 1em;
 }
 
 .project__skill {
@@ -186,44 +144,69 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: .5em;
+  font-size: 1.5rem;
 }
 
 .project__skill span {
-  font-size: .7em;
+  font-size: .7rem;
 }
 
-.project__buttons {
+.project__cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: Center;
+      -ms-flex-pack: Center;
+          justify-content: Center;
+  width: 100%;
   gap: 1em;
 }
 
-.project__buttons button {
-  cursor: pointer;
-}
-
-.project__buttons a {
-  padding: .5em 1.5em;
-  border-radius: 6px;
+.project__cta a {
+  color: #8000ff;
+  border-radius: 5px;
+  padding: .4em 1em;
   border: 1px solid #8000ff;
-  font-weight: bold;
 }
 
-.project__buttons a:hover {
+.project__cta a:active, .project__cta a:hover {
   background: #8000ff;
   color: white;
+}
+
+.project__cta .github {
+  position: relative;
+  width: 7ch;
+}
+
+.project__cta .github span {
+  font-size: 1rem;
+}
+
+.project__cta .github svg {
+  position: absolute;
+  opacity: 0;
+}
+
+.project__cta .github:hover svg {
+  opacity: 1;
+}
+
+.project__cta .github:hover span {
+  opacity: 0;
+}
+
+.project__cta .live {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .App > div, .App nav {
   padding: .5em;
 }
 
-.App a {
+a {
   color: inherit;
   text-decoration: none;
 }

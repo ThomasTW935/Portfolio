@@ -10,9 +10,9 @@ export const ICONS = {
   REACT:{name:'React', color:'#61DAFB', icon: faReact},
   SASS:{name:'Sass', color: '#CF649A', icon: faSass},
   FIREBASE:{name:'Firebase', color:'#FFCB2B', icon: faFire},
-  FIRESTORE:{name:'FireStore', color:'', icon: faDatabase},
+  FIRESTORE:{name:'FireStore', color:'#FFCB2B', icon: faDatabase},
   MYSQL:{name:'MySql', color:'', icon: faDatabase},
-  HEROKU:{name:'Heroku', color:'', icon: faServer},
+  HEROKU:{name:'Heroku', color:'#430098', icon: faServer},
   GITHUB:{name:'Github', color:'', icon: faGithub},
 }
 

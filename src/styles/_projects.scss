@@ -1,18 +1,16 @@
-.projects{
-  width: 70%;
-  margin: 0 auto;
-}
+
 .project{
   border-bottom: 1px solid $color-primary-500;
-  padding: 3em 2em;
+  padding: 1.5em;
   display:flex;
+  flex-wrap:wrap;
   gap: 2vw;
   &__image{
     height: 198px;
     width: 250px;
     display:flex;
+    justify-content:Center;
     img{
-      margin-left:auto;
       display: inline-block;
       vertical-align: middle;
       max-height: 100%;
@@ -21,68 +19,61 @@
     }
   }
   &__details{
-    flex-grow: 2;
+    display:flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  
+  &__title{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  &__skills{
+    display:flex;
     width: 100%;
+    gap: 1em;
+  }
+  &__skill{
     display:flex;
     flex-direction:column;
-    justify-content: space-between;
-  }
-  &__title{
-    display:flex;
     align-items:center;
-    justify-content:space-between;
+    font-size: 1.5rem;
+    span {
+      font-size: .7rem;
+    }
   }
   &__cta{
     display:flex;
-    align-items:center;
+    justify-content:Center;
+    width: 100%;
+    gap: 1em;
     a{
-      padding: .5em 1.5em;
-      border-radius: 6px;
-      font-weight: bold;
+      color: $color-primary-500;
+      border-radius: 5px;
+      padding: .4em 1em;
+      border: 1px solid $color-primary-500;
+      &:active, &:hover{
+        background: $color-primary-500;
+        color: $color-neutral;
+      }
     }
-    
     .github{
+      position:relative;
+      width: 7ch;
+      span{font-size: 1rem;}
+      svg{
+        position:absolute;
+        opacity: 0;
+      }
       &:hover{
-        color: $color-primary-500;
+        svg{opacity: 1;}
+        span{opacity: 0;}
       }
     }
     .live{
-      background: $color-primary-500;
-      color: $color-neutral;
-      &:hover{
-        background: $color-primary-300;
-      }
+      display:grid;
+      place-content:center;
     }
-  }
-  &__skills{
-      display:flex;
-  }
-  &__skill{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      padding-right: .5em;
-      span{
-          font-size: .7em;
-      }
-  }
-  &__buttons{
-      display:flex;
-      justify-content: center;
-      gap: 1em;
-      button{
-          cursor: pointer;
-      }
-      a{
-          padding: .5em 1.5em;
-          border-radius: 6px;
-          border: 1px solid $color-primary-500;
-          font-weight: bold;
-          &:hover{
-              background: $color-primary-500;
-              color: $color-neutral;
-          }
-      }
-      
   }
 }
