@@ -9,10 +9,14 @@ export default function Project({project}) {
         <div className='project'>
           <div className='project__image'><img alt={`${title}`} src={image}/></div>
           <div className='project__details'>
-            <div className='project__header'>
-              <p className='project__title'>{title}</p>
-              
-            </div>
+            <p className='project__title'>{title}</p>
+            <section className='project__cta'>
+              <a href={github} target='_blank' rel='noreferrer' className='github project__skill'>
+                <FontAwesomeIcon  icon={ICONS.GITHUB.icon} />
+                <span>Github</span>
+              </a>
+              <a href={live} target='_blank' rel='noreferrer' className='live'>LIVE</a>
+            </section>
             <div className='project__skills'>
               {
                 skills.map((skill,index)=>
@@ -24,13 +28,7 @@ export default function Project({project}) {
               }
             </div>
             <p className='project__description'>LoiruenakjK jnsadkjnnaksjdnqi jnsdks</p>
-            <section className='project__cta'>
-                <a href={github} target='_blank' rel='noreferrer' className='github project__skill'>
-                  <FontAwesomeIcon  icon={ICONS.GITHUB.icon} />
-                  <span>Github</span>
-                </a>
-                <a href={live} target='_blank' rel='noreferrer' className='live'>LIVE</a>
-              </section>
+            
           </div>
         </div>
     )

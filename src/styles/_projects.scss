@@ -19,9 +19,10 @@
     }
   }
   &__details{
-    display:flex;
+    flex-grow: 1;
+    display:grid;
+    grid-template-columns: 1fr;
     gap: 1em;
-    flex-wrap: wrap;
   }
   
   &__title{
@@ -44,9 +45,9 @@
     }
   }
   &__cta{
+    order: 1;
     display:flex;
-    justify-content:Center;
-    width: 100%;
+    justify-content:center;
     gap: 1em;
     a{
       color: $color-primary-500;
@@ -66,7 +67,7 @@
         position:absolute;
         opacity: 0;
       }
-      &:hover{
+      &:hover, &:active{
         svg{opacity: 1;}
         span{opacity: 0;}
       }
@@ -75,5 +76,17 @@
       display:grid;
       place-content:center;
     }
+  }
+  @media (min-width: 768px){
+    width: 80%;
+    margin: 0 auto;
+    &__details{
+      grid-template-columns: 1fr 30%;
+      align-items:center;
+    }
+    &__description, &__skills{
+      grid-column: 1/3;
+    }
+    &__cta{order: 0;}
   }
 }
