@@ -6,7 +6,30 @@
     &>div, nav{
         padding:.5em;
     }
-    
+    .contact{
+        font-size: 1.2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        gap: .5em;
+        background: $color-primary-500;
+        color: $color-neutral;
+        span{
+            display:flex;
+            gap: 1em;
+            align-items:center;
+        }
+        .links{
+            display:flex;
+            justify-content:center;
+            gap:1.5em;
+            font-size: 1.5rem;
+            svg:hover, svg:active{
+                color: black;
+            }
+        }
+    }
 }
 a{
     color: inherit;
@@ -35,26 +58,9 @@ nav{
             background: $color-neutral;
         }
 }
-.contact{
-    font-size: 1.2rem;
-    p{
-        display:flex;
-        gap: 1em;
-    }
-    .links{
-        display:flex;
-        gap: 1em;
-        padding: .5em 1em;
-        font-size: 1.5em;
-        overflow:hidden;
-        a:hover{
-            color: $color-primary-500;
-        }   
-        
-    }
-}
 .aboutMe{
     min-height: 20vh;
     display:flex;
     justify-content: space-around;
 }
+

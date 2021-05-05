@@ -1,5 +1,5 @@
 import WindowsCalculator from '../images/Windows Calculator.PNG'
-import {faReact, faSass,faPhp, faJs, faHtml5, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faReact, faSass,faPhp, faJs, faHtml5, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faFire, faDatabase, faServer} from '@fortawesome/free-solid-svg-icons'
 
 
@@ -11,9 +11,10 @@ export const ICONS = {
   SASS:{name:'Sass', color: '#CF649A', icon: faSass},
   FIREBASE:{name:'Firebase', color:'#FFCB2B', icon: faFire},
   FIRESTORE:{name:'FireStore', color:'#FFCB2B', icon: faDatabase},
-  MYSQL:{name:'MySql', color:'', icon: faDatabase},
+  MYSQL:{name:'MySql', color:'#00758F', icon: faDatabase},
   HEROKU:{name:'Heroku', color:'#430098', icon: faServer},
   GITHUB:{name:'Github', color:'', icon: faGithub},
+  LINKEDIN:{name:'LinkedIn', color:'#0A66C2', icon: faLinkedin},
 }
 
 export const projects = [

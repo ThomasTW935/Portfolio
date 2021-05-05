@@ -2,19 +2,14 @@ import './styles/main.css'
 
 import Projects from './components/Projects'
 import Nav from './components/Nav'
-import About from './components/About';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <About/>
+      {/* <Nav/> */}
+      <Contacts/>
       <Projects/>
-      <div className='contactMe'>
-        <form>
-          <input type='text' placeholder='message'></input>
-        </form>
-      </div>
     </div>
   );
 }
