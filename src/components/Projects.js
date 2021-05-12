@@ -22,6 +22,7 @@ export default function Projects() {
     
     return (
         <div className='projects'>
+            <big>Projects</big>
             {
                 projects.map((project,index)=> 
                     <Project key={index} project={project}/>

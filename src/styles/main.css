@@ -81,15 +81,28 @@ select {
   }
 }
 
-.project {
-  border-bottom: 1px solid #8000ff;
-  padding: 1.5em;
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5em 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2vw;
+}
+
+.project:not(.project:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .project__image {
@@ -98,9 +111,10 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: Center;
-      -ms-flex-pack: Center;
-          justify-content: Center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .project__image img {
@@ -171,6 +185,7 @@ select {
   border-radius: 5px;
   padding: .4em 1em;
   border: 1px solid #8000ff;
+  text-decoration: none;
 }
 
 .project__cta a:active, .project__cta a:hover {
@@ -207,10 +222,6 @@ select {
 }
 
 @media (min-width: 768px) {
-  .project {
-    width: 80%;
-    margin: 0 auto;
-  }
   .project__details {
     -ms-grid-columns: 1fr 30%;
         grid-template-columns: 1fr 30%;
@@ -231,11 +242,22 @@ select {
 }
 
 .App > div, .App nav {
-  padding: .5em;
+  padding: 1rem;
 }
 
-.App .contact {
-  font-size: 1.2rem;
+.App big {
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .App > * {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,88 +265,97 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1em;
+}
+
+.contact span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .details {
+  text-align: center;
+}
+
+.contact .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: .5em;
-  background: #8000ff;
-  color: white;
+  font-size: 2rem;
 }
 
-.App .contact span {
+.contact .links svg:hover, .contact .links svg:active {
+  opacity: .7;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .details {
+    text-align: left;
+  }
+}
+
+.certificates {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5em;
 }
 
-.App .contact .links {
+@media (min-width: 768px) {
+  .certificates {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 1em;
+  }
+}
+
+.certificate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1.5em;
-  font-size: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
 }
 
-.App .contact .links svg:hover, .App .contact .links svg:active {
-  color: black;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #8000ff;
-  color: white;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1em;
-  padding: 0 1em;
-}
-
-li {
-  padding: .5em .75em;
-  list-style: none;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  border-radius: 5px;
-}
-
-li:hover {
-  color: #8000ff;
-  background: white;
-}
-
-.aboutMe {
-  min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.certificate a {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

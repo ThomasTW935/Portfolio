@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {ICONS} from '../data/Data'
 
 export default function Project({project}) {
-    const {image, title, message, skills } = project
+    const {image, title, description, skills } = project
     const {github,live} = project.links
     return (
         <div className='project'>
@@ -27,7 +27,7 @@ export default function Project({project}) {
                 )
               }
             </div>
-            <p className='project__description'>LoiruenakjK jnsadkjnnaksjdnqi jnsdks</p>
+            <p className='project__description'>{description}</p>
             
           </div>
         </div>

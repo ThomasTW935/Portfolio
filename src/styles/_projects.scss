@@ -1,15 +1,22 @@
-
-.project{
-  border-bottom: 1px solid $color-primary-500;
-  padding: 1.5em;
+.projects{
   display:flex;
+  flex-direction: column;
+  
+}
+.project{
+  &:not(&:last-child){
+    border-bottom: 1px solid rgba(0,0,0,.7);
+  }
+  display:flex;
+  padding: 1.5em 0;
   flex-wrap:wrap;
   gap: 2vw;
   &__image{
     height: 198px;
     width: 250px;
     display:flex;
-    justify-content:Center;
+    justify-content:center;
+    margin: 0 auto;
     img{
       display: inline-block;
       vertical-align: middle;
@@ -54,6 +61,7 @@
       border-radius: 5px;
       padding: .4em 1em;
       border: 1px solid $color-primary-500;
+      text-decoration: none;
       &:active, &:hover{
         background: $color-primary-500;
         color: $color-neutral;
@@ -78,8 +86,7 @@
     }
   }
   @media (min-width: 768px){
-    width: 80%;
-    margin: 0 auto;
+    
     &__details{
       grid-template-columns: 1fr 30%;
       align-items:center;

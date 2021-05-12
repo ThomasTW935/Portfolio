@@ -1,4 +1,6 @@
 import WindowsCalculator from '../images/Windows Calculator.PNG'
+import ToDoList from '../images/Todo List.jpg'
+import ClassSchedulingSystem from '../images/ClassSchedulingSystem.PNG'
 import {faReact, faSass,faPhp, faJs, faHtml5, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faFire, faDatabase, faServer} from '@fortawesome/free-solid-svg-icons'
 
@@ -32,7 +34,7 @@ export const projects = [
       }
   },
   {
-      image: WindowsCalculator, 
+      image: ToDoList, 
       title: 'ToDo List', 
       description:'Todo List with authentication using firebase', 
       skills: [
@@ -42,14 +44,14 @@ export const projects = [
           ICONS.FIRESTORE
       ],
       links: {
-          github:'https://github.com/ThomasTW935/Windows-Calculator',
-          live: 'https://thomastw935-windows-calculator.netlify.app/'
+          github:'https://github.com/ThomasTW935/ToDoList-With-Authentication',
+          live:"https://todolist-with-authentication.netlify.app" 
       }
   },
   {
-      image: WindowsCalculator, 
+      image: ClassSchedulingSystem, 
       title: 'Class Scheduling System', 
-      description:'', 
+      description:'Class Sche', 
       skills: [
           ICONS.HTML,
           ICONS.JAVASCRIPT,
@@ -59,8 +61,23 @@ export const projects = [
           ICONS.HEROKU,
       ],
       links: {
-          github:'https://github.com/ThomasTW935/Windows-Calculator',
-          live: 'https://thomastw935-windows-calculator.netlify.app/'
+          github:'https://github.com/ThomasTW935/Class-Scheduling-System',
+          live: 'https://aqueous-waters-36043.herokuapp.com/'
       }
   },
+]
+
+export const certificates = [
+    {
+        title: "Responsive Web Design",
+        company: "freeCodeCamp.org",
+        date: "09/2020",
+        link: "https://www.freecodecamp.org/certification/fcc87390ae7-8350-41ae-b8df-a9c18ace8fa9/responsive-web-design"
+    },
+    {
+        title: "Javascript Algorithms and Data Structures",
+        company: "freeCodeCamp.org",
+        date: "10/2020",
+        link: "https://www.freecodecamp.org/certification/fcc87390ae7-8350-41ae-b8df-a9c18ace8fa9/javascript-algorithms-and-data-structures"
+    },
 ]

@@ -4,63 +4,65 @@
 
 .App{
     &>div, nav{
-        padding:.5em;
+        padding:1rem;
     }
-    .contact{
-        font-size: 1.2rem;
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        gap: .5em;
-        background: $color-primary-500;
-        color: $color-neutral;
-        span{
-            display:flex;
-            gap: 1em;
-            align-items:center;
-        }
-        .links{
-            display:flex;
-            justify-content:center;
-            gap:1.5em;
-            font-size: 1.5rem;
-            svg:hover, svg:active{
-                color: black;
-            }
+    big{
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    @media(min-width: 768px){
+        &>*{
+            width: 80%;
+            margin: 0 auto;
         }
     }
-}
-a{
-    color: inherit;
-    text-decoration: none;
-}
-nav{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        background: $color-primary-500;
-        color: $color-neutral;
-    }
-    ul{
-        display:flex;
-        gap: 1em;
-        padding: 0 1em;
-    }
-    li{
-        padding: .5em .75em;
-        list-style: none;
-        cursor: pointer;
-        border-bottom: 2px solid transparent ;
-        border-radius: 5px;
-        &:hover{
-            color: $color-primary-500;
-            background: $color-neutral;
-        }
-}
-.aboutMe{
-    min-height: 20vh;
-    display:flex;
-    justify-content: space-around;
 }
 
+.contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1em;
+    span{
+        display:flex;
+        gap: 1em;
+        align-items:center;
+    }
+    .details{
+        text-align:center;
+    }
+    .links{
+        display:flex;
+        justify-content:center;
+        gap: .5em;
+        font-size: 2rem;
+        svg:hover, svg:active{
+            opacity: .7;
+        }
+    }
+    @media(min-width: 768px){
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction:row;
+        .details{text-align: left;}
+    }
+}
+.certificates{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .5em;
+    @media (min-width: 768px) {
+        flex-direction:row;
+        justify-content:space-evenly;
+        gap: 1em;
+    }
+}
+.certificate{
+    display:flex;
+    flex-direction:column;
+    padding: 1em;
+    a{
+        width: 100%;
+    }
+}
