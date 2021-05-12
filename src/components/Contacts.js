@@ -19,7 +19,7 @@ export default function Contacts() {
       </div>
       <div className='links'>
         <a href='https://github.com/ThomasTW935' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={ICONS.GITHUB.icon}/></a>
-        <a href='https://github.com/ThomasTW935' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={ICONS.LINKEDIN.icon}/></a>
+        <a href='linkedin.com/in/daryl-p-thomas' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={ICONS.LINKEDIN.icon}/></a>
       </div>
   </div>
   )
