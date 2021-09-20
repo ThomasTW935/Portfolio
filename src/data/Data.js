@@ -1,5 +1,6 @@
 import WindowsCalculator from '../images/Windows Calculator.PNG'
 import ToDoList from '../images/Todo List.jpg'
+import fbClone from '../images/fb-clone 1.PNG'
 import ClassSchedulingSystem from '../images/ClassSchedulingSystem.PNG'
 import {faReact, faSass,faPhp, faJs, faHtml5, faGithub, faLinkedin, faCss3Alt} from '@fortawesome/free-brands-svg-icons'
 import {faFire, faDatabase, faServer} from '@fortawesome/free-solid-svg-icons'
@@ -67,7 +68,7 @@ export const projects = [
       }
   },
   {
-      image: ClassSchedulingSystem, 
+      image: fbClone, 
       title: 'Facebook Clone', 
       description:'A facebook clone ', 
       skills: [
