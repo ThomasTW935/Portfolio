@@ -12,6 +12,7 @@ function App() {
       <Contacts/>
       <Projects/>
       <Certificates/>
+      asdasd
     </div>
   );
 }
