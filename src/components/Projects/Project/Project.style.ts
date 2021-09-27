@@ -12,10 +12,11 @@ interface ICon extends StyledComponentBase<any, {}> {
 
 const Con: ICon = styled.div`
   display: flex;
+  gap: 0.5em;
+  padding: 1em 0;
 `
 
 const image = styled.div`
-  width: 50%;
   img {
     aspect-ratio: 16/9;
     width: 100%;
@@ -24,12 +25,17 @@ const image = styled.div`
 `
 
 const details = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template: 1fr 2fr 1fr 1fr / 1fr;
+  justify-content: start;
+  width: 100%;
+  gap: 0.3rem;
 `
 
-const title = styled.p``
+const title = styled.p`
+  font-weight: bold;
+  font-size: 1.2rem;
+`
 
 const cta = styled.div`
   display: flex;
