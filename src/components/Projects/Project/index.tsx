@@ -21,7 +21,7 @@ export default function Project({ project }: IProps) {
         <Con.Skills>
           {skills.map((skill, index) => (
             <Con.Skill key={index}>
-              <skill.ICON size={30} />
+              <skill.ICON size={28} />
               <span>{skill.NAME}</span>
             </Con.Skill>
           ))}

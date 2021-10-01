@@ -12,15 +12,26 @@ interface ICon extends StyledComponentBase<any, {}> {
 
 const Con: ICon = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 0.5em;
-  padding: 1em 0;
+  padding: 1em;
+  background: white;
+  margin: 1rem 0;
+  border-radius: 5px;
+  min-height: 400px;
+  min-width: 400px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 
 const image = styled.div`
+  width: 100%;
   img {
     aspect-ratio: 16/9;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 `
 
@@ -39,11 +50,11 @@ const title = styled.p`
 
 const cta = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.5em;
   a {
-    color: black;
-    border: 3px solid black;
+    color: #111;
+    border: 2px solid black;
     border-radius: 0.2em;
     font-weight: bold;
     text-decoration: none;
@@ -51,38 +62,42 @@ const cta = styled.div`
     align-items: center;
     gap: 0.3em;
     padding: 0.25em 0.5em;
+    transform: scale(1);
     transition: 0.2s ease-in-out;
-    &:hover {
-      color: white;
-      background: black;
+    &:hover,
+    &:active {
+      transform: scale(1.08);
     }
   }
 `
 
 const skills = styled.div`
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `
 
 const skill = styled.div`
   position: relative;
   display: grid;
-  place-items: center;
+  align-items: center;
   svg:hover ~ span {
     opacity: 1;
-    bottom: 100%;
+    transform: translateX(-50%) translateY(-120%);
   }
   span {
     position: absolute;
     left: 50%;
-    bottom: 80%;
-    transform: translateX(-50%);
+    top: 0;
+    transform: translateX(-50%) translateY(0);
     background: #333;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0.5em 0.75em;
     border-radius: 0.3em;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
   }
 `
 
