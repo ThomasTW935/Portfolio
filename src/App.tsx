@@ -1,16 +1,14 @@
-import Projects from "./components/Projects"
-import Nav from "./components/Nav"
-import Contacts from "./components/Contacts"
-import Certificates from "./components/Certificates"
+import Con from "./App.style"
+import { Contacts, Projects, Certificates } from "./components"
 
 function App() {
   return (
-    <div className="App">
+    <Con>
       {/* <Nav/> */}
       <Contacts />
       <Projects />
       <Certificates />
-    </div>
+    </Con>
   )
 }
 
