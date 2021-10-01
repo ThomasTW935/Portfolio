@@ -1,7 +1,7 @@
 import WindowsCalculator from "../images/WindowsCalculator.png"
 import ToDoList from "../images/Todo List.jpg"
 import fbClone from "../images/fb-clone.png"
-import ClassSchedulingSystem from "../images/ClassSchedulingSystem.png"
+import ClassSchedulingSystem from "../images/ClassSchedulingSystem - Copy.png"
 
 import {
   Html5,
