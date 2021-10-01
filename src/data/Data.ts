@@ -1,7 +1,7 @@
-// import WindowsCalculator from "../images/Windows Calculator.PNG"
+import WindowsCalculator from "../images/Windows Calculator.png"
 import ToDoList from "../images/Todo List.jpg"
-// import fbClone from "../images/fb-clone 1.PNG"
-// import ClassSchedulingSystem from "../images/ClassSchedulingSystem.PNG"
+import fbClone from "../images/fb-clone 1.png"
+import ClassSchedulingSystem from "../images/ClassSchedulingSystem.png"
 
 import {
   Html5,
@@ -35,23 +35,57 @@ export const ICONS = {
   JAVASCRIPT: { NAME: "Javascript", COLOR: "#F7E018", ICON: Javascript },
   REACT: { NAME: "React", COLOR: "#61DAFB", ICON: ReactLogo },
   MYSQL: { NAME: "MySql", COLOR: "#00758F", ICON: Mysql },
-  MONGODB: { NAME: "mongo DB", COLOR: "#10AA50", ICON: Mongodb },
+  MONGODB: { NAME: "MongoDB", COLOR: "#10AA50", ICON: Mongodb },
   FIREBASE: { NAME: "Firebase", COLOR: "#FFCB2B", ICON: Firebase },
   HEROKU: { NAME: "Heroku", COLOR: "#430098", ICON: Heroku },
   GITHUB: { NAME: "Github", COLOR: "", ICON: Github },
   LINKEDIN: { NAME: "LinkedIn", COLOR: "#0A66C2", ICON: Linkedin },
   LIVE: { NAME: "Live", COLOR: "red", ICON: Live },
 }
-
 export const projects = [
   {
-    image: ToDoList,
-    title: "ToDo List",
-    description: "Todo List with authentication using firebase",
-    skills: [ICONS.REACT, ICONS.SASS, ICONS.FIREBASE, ICONS.FIREBASE],
+    image: WindowsCalculator,
+    title: "Windows Calculator Clone",
+    description: "Windows Calculator Clone using React with SASS",
+    skills: [ICONS.REACT, ICONS.SASS],
     links: {
-      github: "https://github.com/ThomasTW935/ToDoList-With-Authentication",
-      live: "https://todolist-with-authentication.netlify.app",
+      github: "https://github.com/ThomasTW935/Windows-Calculator",
+      live: "https://thomastw935-windows-calculator.netlify.app/",
+    },
+  },
+  {
+    image: ClassSchedulingSystem,
+    title: "Class Scheduling System",
+    description:
+      "This system was created for our thesis. It is a system for the dean to assist in scheduling classes for the whole campus.",
+    skills: [
+      ICONS.HTML,
+      ICONS.JAVASCRIPT,
+      ICONS.PHP,
+      ICONS.SASS,
+      ICONS.MYSQL,
+      ICONS.HEROKU,
+    ],
+    links: {
+      github: "https://github.com/ThomasTW935/Class-Scheduling-System",
+      live: "https://aqueous-waters-36043.herokuapp.com/",
+    },
+  },
+  {
+    image: fbClone,
+    title: "Facebook Clone(In Progress)",
+    description:
+      "A Facebook clone built using the MERN Stack with Firebase as authentication. ",
+    skills: [
+      ICONS.REACT,
+      ICONS.CSS,
+      ICONS.FIREBASE,
+      ICONS.MONGODB,
+      ICONS.HEROKU,
+    ],
+    links: {
+      github: "https://github.com/ThomasTW935/fb-clone",
+      live: "https://fb-clone-thomas.netlify.app/",
     },
   },
 ]
