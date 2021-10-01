@@ -5,9 +5,11 @@ interface ICon extends StyledComponentBase<any, {}> {
   Projects?: any
 }
 
-const Con: ICon = styled.section``
+const Con: ICon = styled.div`
+  background: #eee;
+`
 
-const title = styled.p``
+const title = styled.h3``
 
 const projects = styled.section``
 
