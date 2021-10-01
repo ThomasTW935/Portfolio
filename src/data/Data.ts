@@ -1,6 +1,6 @@
-import WindowsCalculator from "../images/Windows Calculator.png"
+import WindowsCalculator from "../images/WindowsCalculator.png"
 import ToDoList from "../images/Todo List.jpg"
-import fbClone from "../images/fb-clone 1.png"
+import fbClone from "../images/fb-clone.png"
 import ClassSchedulingSystem from "../images/ClassSchedulingSystem.png"
 
 import {
