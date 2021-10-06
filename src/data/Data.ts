@@ -19,6 +19,7 @@ import {
   Mongodb,
   Mysql,
   Styledcomponents,
+  Typescript,
 } from "@styled-icons/simple-icons"
 import { Live } from "@styled-icons/fluentui-system-filled"
 
@@ -33,6 +34,7 @@ export const ICONS = {
     ICON: Styledcomponents,
   },
   JAVASCRIPT: { NAME: "Javascript", COLOR: "#F7E018", ICON: Javascript },
+  TYPESCRIPT: { NAME: "Typescript", COLOR: "#F7E018", ICON: Typescript },
   REACT: { NAME: "React", COLOR: "#61DAFB", ICON: ReactLogo },
   MYSQL: { NAME: "MySql", COLOR: "#00758F", ICON: Mysql },
   MONGODB: { NAME: "MongoDB", COLOR: "#10AA50", ICON: Mongodb },
@@ -47,7 +49,7 @@ export const projects = [
     image: WindowsCalculator,
     title: "Windows Calculator Clone",
     description: "Windows Calculator Clone using React with SASS",
-    skills: [ICONS.REACT, ICONS.SASS],
+    skills: [ICONS.REACT, ICONS.TYPESCRIPT, ICONS.SASS],
     links: {
       github: "https://github.com/ThomasTW935/Windows-Calculator",
       live: "https://thomastw935-windows-calculator.netlify.app/",
@@ -78,6 +80,7 @@ export const projects = [
       "A Facebook clone built using the MERN Stack with Firebase as authentication. ",
     skills: [
       ICONS.REACT,
+      ICONS.TYPESCRIPT,
       ICONS.CSS,
       ICONS.FIREBASE,
       ICONS.MONGODB,
