@@ -46,6 +46,17 @@ export const ICONS = {
 }
 export const projects = [
   {
+    image: ToDoList,
+    title: "Todo List",
+    description:
+      "A Todo List app challenge from FrontEndMentor. This app includes a light/dark theme toggle, authentication and database using firebase",
+    skills: [ICONS.REACT, ICONS.SASS, ICONS.FIREBASE],
+    links: {
+      github: "https://github.com/ThomasTW935/ToDoList-With-Authentication",
+      live: "https://todolist-with-authentication.netlify.app/",
+    },
+  },
+  {
     image: WindowsCalculator,
     title: "Windows Calculator Clone",
     description: "Windows Calculator Clone using React with SASS",
