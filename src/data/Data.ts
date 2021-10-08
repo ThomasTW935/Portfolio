@@ -49,7 +49,7 @@ export const projects = [
     image: WindowsCalculator,
     title: "Windows Calculator Clone",
     description: "Windows Calculator Clone using React with SASS",
-    skills: [ICONS.REACT, ICONS.TYPESCRIPT, ICONS.SASS],
+    skills: [ICONS.REACT, ICONS.TYPESCRIPT, ICONS.STYLED_COMPONENTS],
     links: {
       github: "https://github.com/ThomasTW935/Windows-Calculator",
       live: "https://thomastw935-windows-calculator.netlify.app/",
