@@ -63,7 +63,7 @@ export const projects = [
     skills: [ICONS.REACT, ICONS.TYPESCRIPT, ICONS.STYLED_COMPONENTS],
     links: {
       github: "https://github.com/ThomasTW935/Windows-Calculator",
-      live: "https://thomastw935-windows-calculator.netlify.app/",
+      live: "https://windows-calculator-clone.netlify.app/",
     },
   },
   {
