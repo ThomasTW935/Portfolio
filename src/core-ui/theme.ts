@@ -9,7 +9,7 @@ export const defaultTheme: DefaultTheme = {
   palette: {
     common: {
       black: '#111',
-      white: '#eee',
+      white: '#fff',
     },
     primary: {
       main: '#7510F7 ',
