@@ -81,6 +81,9 @@ const reset = css`
 `
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  body{
+    margin: 0 50px;
+  }
 `
 
 export default GlobalStyle
