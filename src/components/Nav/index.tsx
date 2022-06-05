@@ -1,14 +1,36 @@
-import React from 'react'
+import {useState} from 'react'
+import { ICONS } from "../../data/Data"
+import Con from "./Nav.style"
 
 export default function Nav() {
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+      setColorchange(window.scrollY >= 80);
+    };
+    window.addEventListener('scroll', changeNavbarColor);
   return (
-    <nav>
-      <h2>Portfolio</h2>
+    <Con colorChange={colorChange}>
       <ul>
-        <li><a href='/'>About</a></li>
-        <li><a href='/'>Projects</a></li>
-        <li><a href='/'>Contact Me</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#work'>Work</a></li>
+        <li><a href='#certificates'>Certificates</a></li>
       </ul>
-    </nav>
+      <div>
+        <a
+          href="https://github.com/ThomasTW935"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ICONS.GITHUB.ICON size={28} />
+        </a>
+        <a
+          href="https://linkedin.com/in/daryl-p-thomas"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ICONS.LINKEDIN.ICON size={28} />
+        </a>
+      </div>
+    </Con>
   )
 }
