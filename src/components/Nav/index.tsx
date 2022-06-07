@@ -5,7 +5,7 @@ import Con from "./Nav.style"
 export default function Nav() {
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () =>{
-      setColorchange(window.scrollY >= 80);
+      setColorchange(window.scrollY >= 100);
     };
     window.addEventListener('scroll', changeNavbarColor);
   return (
