@@ -83,6 +83,8 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   body{
     margin: 0 50px;
+    padding-top: 100px;
+    font: normal normal normal 20px/24px Raleway;
   }
 `
 

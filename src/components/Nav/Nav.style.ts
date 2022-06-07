@@ -16,7 +16,9 @@ const Con = styled.nav<ICon>`
   z-index: 10;
   transition: .3s ease;
   a {
-    color: black;
+    color: #141C3A;
+    
+
     transition: 0.25s ease-in-out;
     text-decoration:none;
     transition: .3s ease;
@@ -33,6 +35,8 @@ const Con = styled.nav<ICon>`
   ul{
     list-style:none;
     gap: 80px;
+    margin: 0;
+    padding:0;
   }
   div{
     gap: 45px;
