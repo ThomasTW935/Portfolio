@@ -1,11 +1,11 @@
 import Con from "./App.style"
-import { Contacts, Projects, Certificates,Nav } from "./components"
+import { Contacts, Projects, Certificates,Nav,Hero } from "./components"
 
 function App() {
   return (
     <Con>
       <Nav/>
-      <Contacts />
+      <Hero />
       <Projects />
       <Certificates />
     </Con>
